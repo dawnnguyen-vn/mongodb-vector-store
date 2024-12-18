@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  # If docker compose not work please run this command: docker run -p 27017:27017 mongodb/mongodb-atlas-local
+  mongo:
+    image: mongodb/mongodb-atlas-local
+    restart: always
+    ports:
+      - 27017:27017
